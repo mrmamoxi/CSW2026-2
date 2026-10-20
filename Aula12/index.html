@@ -1,0 +1,138 @@
+
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercícios de Flexbox</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    h2 {
+      margin-top: 30px;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+
+    .flex-container > div {
+      padding: 15px;
+      text-align: center;
+      color: white;
+      border-radius: 4px;
+    }
+
+
+    .container-1 {
+      display: flex;
+      gap: 10px;
+      background-color: #ddd;
+      padding: 10px;
+    }
+    .container-1 > div {
+      background-color: #607d8b;
+    }
+
+
+    .container-2 {
+      display: flex;
+      gap: 10px;
+      background-color: #ddd;
+      padding: 10px;
+    }
+    .container-2 > div {
+      flex-grow: 1;
+      cursor: pointer;
+      transition: border-bottom 0.2s ease;
+    }
+    .item-a { background-color: #ff5722; }
+    .item-b { background-color: #4caf50; }
+    .item-c { background-color: #2196f3; }
+
+    .container-2 > div:hover {
+      border-bottom: 4px solid #000;
+    }
+
+    .container-3 {
+      display: flex;
+      gap: 10px;
+      background-color: #ddd;
+      padding: 10px;
+    }
+    .container-3 > div {
+      flex-grow: 1;
+      background-color: #78909c;
+      transition: background-color 0.2s;
+    }
+    .container-3 > div:hover {
+      background-color: #546e7a;
+    }
+    
+    .container-3 .especial {
+      flex-grow: 2;
+      background-color: #ff9800;
+      cursor: pointer;
+    }
+    .container-3 .especial:hover {
+      background-color: #f57c00;
+    }
+    .container-3 .especial:active {
+      background-color: #e65100;
+    }
+
+
+    .container-4 {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      background-color: #ddd;
+      padding: 10px;
+    }
+    .container-4 > div {
+      background-color: #9c27b0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Prática de Flexbox</h1>
+
+
+  <h2>Exercício 1:</h2>
+  <div class="container-1">
+    <div>Item 1</div>
+    <div>Item 2</div>
+  </div>
+
+
+  <h2>Exercício 2:</h2>
+  <div class="container-2">
+    <div class="item-a">Item 1</div>
+    <div class="item-b">Item 2</div>
+    <div class="item-c">Item 3</div>
+  </div>
+
+
+  <h2>Exercício 3:</h2>
+  <div class="container-3">
+    <div>Item 1</div>
+    <div>Item 2</div>
+    <div class="especial">Item 3 (Especial)</div>
+    <div>Item 4</div>
+    <div>Item 5</div>
+  </div>
+
+
+  <h2>Exercício 4:</h2>
+  <div class="container-4">
+    <div>Item 1</div>
+    <div>Item 2</div>
+    <div>Item 3</div>
+  </div>
+
+</body>
+</html>
