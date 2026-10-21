@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício de Fontes</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans&family=Sedan&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f4eaec;
+            color: #1d3557; 
+            margin: 0;
+            padding: 30px 20px;
+        }
+
+        .parte-1, .parte-2 {
+            background-color: #ffffff;
+            border: 3px solid #800020; 
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 10px rgba(128, 0, 32, 0.15);
+        }
+
+        .parte-1 h2:first-child, .parte-2 h2:first-child {
+            border-bottom: 2px solid #457b9d; 
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .btn-avancar {
+            display: inline-block;
+            margin-bottom: 25px;
+            padding: 10px 18px;
+            background-color: #800020; 
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+            border: 2px solid #1d3557; 
+            font-family: Arial, Helvetica, sans-serif; 
+            transition: all 0.2s ease-in-out;
+        }
+
+        .btn-avancar:hover {
+            background-color: #1d3557; 
+            color: #f4eaec;
+        }
+
+        hr {
+            display: none;
+        }
+
+    </style>
+
+    <style>
+        .parte-1 h5 {
+            font-family: 'Sedan', serif;
+            color: #457b9d; 
+        }
+        .parte-1 h6 {
+            font-family: 'Open Sans', sans-serif;
+            color: #800020; 
+        }
+        .parte-1 p {
+            font-family: 'Lora', serif;
+        }
+
+        @font-face {
+            font-family: 'BloodyGhost';
+            src: url('./fontes/BloodyGhost.otf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Crimson Horror';
+            src: url('./fontes/CrimsonHorror.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Roffelia';
+            src: url('./fontes/Roffelia.otf') format('truetype');
+        }
+
+        .parte-2 h4 {
+            font-family: 'BloodyGhost', sans-serif;
+            color: #800020;
+        }
+        .parte-2 h5 {
+            font-family: 'Crimson Horror', sans-serif;
+            color: #457b9d;
+        }
+        .parte-2 h6 {
+            font-family: 'Roffelia', sans-serif;
+            color: #1d3557;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="parte-1">
+        <h1>Parte 1 - Google Fonts </h1>
+        <h5>Sedan</h5>
+        <h6>Open Sans</h6>
+        <p>Lora</p>
+    </section>
+
+    <hr>
+
+    <section class="parte-2">
+        <h1>Parte 2 - Download de fontes</h1>
+        <a href="./fontes/BloodyGhost.otf"><h4>BloodyGhost</h4></a>
+
+        <a href="./fontes/CrimsonHorror.ttf"><h5>Crimson Horror</h5></a>
+
+        <a href="./fontes/Roffelia.otf"><h6>Roffelia</h6></a>
+    </section>
+
+    <a href="paginadois.html" class="btn-avancar">Ir para a Página Dois →</a>
+</body>
+</html>
