@@ -1,0 +1,63 @@
+:root {
+    --vinho-escuro: #581845;
+    --vinho-vivo: #900c3f;
+    --vinho-medio: #c70039;
+    --vinho-claro: #ff5733; 
+    --azul-gelo: #eaf8ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 40px 20px;
+    background-image: linear-gradient(90deg,
+        #581845, 
+        #900c3f, 
+        #0662a4); 
+    color: black;
+}
+
+.caixa {
+    width: 100%;
+    max-width: 480px;
+    padding: 20px 18px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 8px 12px 20px rgba(88, 24, 69, 0.35);
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.15rem;
+    color: #581845; 
+    margin-bottom: 18px;
+}
+
+h2 {
+    font-size: 0.85rem;
+    color: #900c3f; 
+    margin-top: 12px;
+    margin-bottom: 6px;
+}
+
+p {
+    font-size: 0.65rem;
+    line-height: 1.35;
+    text-align: justify;
+    color: #222;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 20px 12px;
+    }
+}
